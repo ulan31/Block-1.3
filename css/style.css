@@ -21,13 +21,24 @@ body{
     font-family: 'TT Lakes Regular';
     font-size: 14px;
     width: 320px;
+    padding: 0;
+    margin: 0;
 }
 
 .header-menu {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 1rem;
+}
+.divider-line_xs {
+    display: block;
+}
+.divider-line_sm {
+    display: none;
+}
+.header-menu__call, .header-menu__chat, .header-menu__person {
+    display: none;
 }
 
 .divider-line {
@@ -39,3 +50,29 @@ body{
     border-radius: 1px;
 }
 
+@media (min-width: 768px) {
+    body {
+        width: 768px;
+    }
+    .header-menu__call, .header-menu__chat, .header-menu__person {
+        display: block;
+    }
+    .divider-line_xs {
+        display: none;
+    }
+    .divider-line_sm {
+        display: block;
+    }
+    .header-menu__call {
+        margin-left: 250px;
+    }
+}
+
+@media (min-width: 1120px) {
+    body {
+        width: 1120px;
+    }
+    .header-menu {
+        display: none;
+    }
+}
