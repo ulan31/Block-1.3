@@ -8,85 +8,33 @@
 </head>
 <body>
   <div class="container">
-    <header>
-      <nav>
-        <div class="header-menu">
-          <div class="header-menu__burger">
-            <img src="./img/burger.svg" alt="burger">
-          </div>
-          <div class="header-menu__dividerLine header-menu__dividerLine--sm"></div>
-          <div class="logo">
-            <a href="/"><img src="./img/logo.png" alt="logo"></a>
-          </div>
-          <div class="header-menu__dividerLine header-menu__dividerLine--xs"></div>
-          <div class="header-menu__call">
-            <img src="./img/call.svg" alt="call">
-          </div>
-          <div class="header-menu__chat">
-            <img src="./img/chat.svg" alt="chat">
-          </div>
-          <div class="header-menu__person">
-            <img src="./img/person.svg" alt="person">
-          </div>
-          <div class="header-menu__dividerLine header-menu__dividerLine--sm"></div>
-          <div class="header-menu__repair">
-            <a href="/repair"><img src="./img/repair.svg" alt="repair"></a>
-          </div>
-          <div class="header-menu__search">
-            <a href="/search"><img src="./img/search.svg" alt="search"></a>
-          </div>
-        </div>
-      </nav>
+    <header class="header">
+      <button class="header__burger">
+        <img src="./img/burger.svg" alt="burger">
+      </button>
+      <div class="logo">
+        <a class="logo__link" href="/">
+          <img class="logo__img" src="./img/logo.png" alt="logo">
+        </a>
+      </div>
+      <ul class="header-menu">
+        <li class="header-menu__item header-menu__item--call link">
+          <a class="link__url" href=""></a>
+        </li>
+        <li class="header-menu__item header-menu__item--chat link">
+          <a class="link__url" href=""></a>
+        </li>
+        <li class="header-menu__item header-menu__item--person link">
+          <a class="link__url" href=""></a>
+        </li>
+        <li class="header-menu__item header-menu__item--repair link">
+          <a class="link__url" href=""></a>
+        </li>
+        <li class="header-menu__item header-menu__item--search link">
+          <a class="link__url" href=""></a>
+        </li>
+      </ul>
     </header>
-    <main class="main">
-      <div class="main-title">
-        <div class="main-title__leftBorder"></div>
-        <h1 class="title">Услуги и сервисы</h1>
-        <div class="sub-menu">
-          <div class="menu-repair">
-            <div class="menu-repair__text">Оставь заявку</div>
-            <div class="menu-repair__img"><img src="./img/repair.svg" alt="repair"></div>
-          </div>
-          <div class="menu-search">
-            <div class="menu-search__text">Статус ремонта</div>
-            <div class="menu-search__img"><img src="./img/search.svg" alt="search"></div>
-          </div>
-        </div>
-      </div>
-      <nav>
-        <ul class="main-menu">
-          <li class="main-menu__element">
-            <a href="" class="main-menu__link main-menu__element--active">Ремонтируемые условия</a>
-          </li>
-          <li class="main-menu__element">
-            <a href="" class="main-menu__link">Дополнительные услуги</a>
-          </li>
-          <li class="main-menu__element">
-            <a href="" class="main-menu__link">Цены на услуги</a>
-          </li>
-          <li class="main-menu__element">
-            <a href="" class="main-menu__link main-menu__link--isActive">Адреса сервисных центров</a>
-          </li>
-          <li class="main-menu__element">
-            <a href="" class="main-menu__link">Специальные цены</a>
-          </li>
-        </ul>
-      </nav>
-      <h3 class="title-comment">Отзывы</h3>
-      <div class="content">
-        <div class="content__text">
-          <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-          <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
-          <div class="content__link read-link">
-            <img src="./img/icon.svg" alt="icon">
-            <div class="read-link__text">
-              <a href="" class="read-link__link">Читать далее</a>
-            </div>
-          </div>
-        </div>
-        <img class="content__img" src="./img/item.png" alt="picture">
-      </div>
-    </main>
   </div>
 </body>
 </html>
