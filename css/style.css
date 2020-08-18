@@ -35,11 +35,9 @@ ul {
     font-size: 14px;
     width: 320px;
     margin: 18px auto;
-    outline: 1px solid black;
 }
 .header {
     display: flex;
-    /*justify-content: space-around;*/
     align-items: center;
 }
 .header__burger {
@@ -48,7 +46,6 @@ ul {
     border: none;
     background-color: #fff;
     margin-left: 16px;
-
 }
 .logo{
     flex: 1 1 auto;
@@ -88,8 +85,9 @@ ul {
 
     }
     .header__burger {
-        outline: 1px solid red;
         display: flex;
+        flex: 1 1 10%;
+        margin-left: 24px;
     }
     .header__burger::after {
         content: '';
@@ -97,18 +95,38 @@ ul {
         height: 32px;
         background-color: #EAEAEA;
         align-self: center;
+        margin-left: 15px;
     }
     .logo {
-        outline: 1px solid green;
-        flex: none;
+        flex: 1 1 40%;
+        text-align: left;
     }
     .menu-three {
         display: flex;
-        outline: 1px solid royalblue;
+        flex: 1 1 30%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .header__menu {
+        margin-right: 24px;
+    }
+    .menu-two::before {
+        margin-left: 10px;
+    }
+    .call {
+        width: 40px;
+        height: 40px;
+        border: none;
+        background-color: #fff;
     }
     .menu-two {
-        outline: 1px solid aqua;
-        flex: none;
+        flex: 1 1 20%;
+    }
+    .chat {
+        width: 40px;
+        height: 40px;
+        border: none;
+        background-color: #fff;
     }
 
 
