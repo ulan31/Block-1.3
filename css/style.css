@@ -14,19 +14,19 @@ ul {
 /*Обнуление*/
 @font-face {
     font-family: 'TT Lakes Bold';
-    src: url('../fonts/TTLakes/TTLakes-Bold.eot');
-    src: url('../fonts/TTLakes/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/TTLakes/TTLakes-Bold.woff') format('woff'),
-    url('../fonts/TTLakes/TTLakes-Bold.ttf') format('truetype');
+    src: url('../fonts/TTLakes-Bold.eot');
+    src: url('../fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Bold.woff') format('woff'),
+    url('../fonts/TTLakes-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 @font-face {
     font-family: 'TT Lakes Regular';
-    src: url('../fonts/TTLakes/TTLakes-Regular.eot');
-    src: url('../fonts/TTLakes/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/TTLakes/TTLakes-Regular.woff') format('woff'),
-    url('../fonts/TTLakes/TTLakes-Regular.ttf') format('truetype');
+    src: url('../fonts/TTLakes-Regular.eot');
+    src: url('../fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Regular.woff') format('woff'),
+    url('../fonts/TTLakes-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -35,10 +35,11 @@ ul {
     font-size: 14px;
     width: 320px;
     margin: 18px auto;
+    outline: 1px solid black;
 }
 .header {
     display: flex;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
     align-items: center;
 }
 .header__burger {
@@ -46,97 +47,74 @@ ul {
     height: 40px;
     border: none;
     background-color: #fff;
+    margin-left: 16px;
+
 }
 .logo{
-
+    flex: 1 1 auto;
+    text-align: center;
 }
-.logo__link {
-
+.menu-three {
+    display: none;
 }
-.logo__img {}
-.header-menu {
+.header__menu {
+    margin-right: 16px;
+}
+.menu-two {
     display: flex;
-    flex: 0 1 120px;
+    flex: 1 1 30%;
     justify-content: space-between;
 }
-.header-menu::before {
+.menu-two::before {
     content: '';
     width: 2px;
     height: 32px;
     background-color: #EAEAEA;
-    display: inline-block;
+    align-self: center;
 }
-.header-menu__item {
-    cursor: pointer;
+.repair {
     width: 40px;
     height: 40px;
+    border: none;
+    background-color: #fff;
 }
-.header-menu__item--call {
-    background: url('../img/call.svg') 50%/cover no-repeat;
-    display: none;
-}
-.header-menu__item--chat {
-    background: url('../img/chat.svg') 50%/cover no-repeat;
-    display: none;
-}
-.header-menu__item--person {
-    background: url('../img/person.svg') 50%/cover no-repeat;
-    display: none;
-}
-.header-menu__item--repair {
-    background: url('../img/repair.svg') 50%/cover no-repeat;
-}
-.header-menu__item--search {
-    background: url('../img/search.svg') 50%/cover no-repeat;
-}
+
 @media (min-width: 768px) {
     .container {
         width: 768px;
         margin: 18px auto;
     }
-    .header-menu__item--call, .header-menu__item--chat, .header-menu__item--person {
-        display: flex;
-    }
-    .header-menu__item--repair::before {
-        content: '';
-        width: 2px;
-        height: 32px;
-        background-color: #EAEAEA;
-        display: inline-block;
-        margin-left: -16px;
-        margin-top: 4px;
-    }
     .header {
-        display: flex;
-        justify-content: normal;
-
-    }
-    .logo {
-        flex: 1 1 auto;
-    }
-    .header-menu {
-        display: flex;
-        flex: 0 1 370px;
-        justify-content: space-around;
-    }
-    .header-menu::before {
-        display: none;
 
     }
     .header__burger {
-        display: block;
-        margin-left: 24px;
-        margin-right: 34px;
+        outline: 1px solid red;
+        display: flex;
     }
     .header__burger::after {
         content: '';
         width: 2px;
         height: 32px;
         background-color: #EAEAEA;
-        display: flex;
-        margin-left: 55px;
-        margin-top: -40px;
+        align-self: center;
     }
+    .logo {
+        outline: 1px solid green;
+        flex: none;
+    }
+    .menu-three {
+        display: flex;
+        outline: 1px solid royalblue;
+    }
+    .menu-two {
+        outline: 1px solid aqua;
+        flex: none;
+    }
+
+
+
+
+
 }
 @media (min-width: 1120px) {
     .container {
