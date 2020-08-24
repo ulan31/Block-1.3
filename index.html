@@ -7,46 +7,31 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="container">
+  <div class="container" style="outline: 1px solid black;">
     <header class="header">
-      <button class="header__burger">
-        <img src="./img/burger.svg" alt="burger">
-      </button>
-      <div class="logo">
-        <a class="logo__link" href="/">
-          <img class="logo__img" src="./img/logo.png" alt="logo">
-        </a>
+      <button class="header__burger"></button>
+      <div class="logo header__logo">
+        <a class="logo__link" href="/"></a>
       </div>
-      <ul class="menu-three">
-        <li>
-          <button class="call">
-            <img src="./img/call.svg" alt="call">
-          </button>
+      <ul class="feedback-list">
+        <li class="feedback-list__item">
+          <button class="feedback-list__link button button--call"></button>
         </li>
-        <li>
-          <button class="chat">
-            <img src="./img/chat.svg" alt="chat">
-          </button>
+        <li class="feedback-list__item">
+          <button class="feedback-list__link button button--chat"></button>
         </li>
-        <li>
-          <a class="person" href="">
-            <img src="./img/person.svg" alt="person">
-          </a>
+        <li class="feedback-list__item">
+          <a class="feedback-list__link button button--person" href="#"></a>
         </li>
       </ul>
-      <ul class="header__menu menu-two">
-        <li>
-          <button class="repair">
-            <img src="./img/repair.svg" alt="">
-          </button>
+      <ul class="serves-list">
+        <li class="servers-list__item">
+          <button class="servers-list__link button button--repair"></button>
         </li>
-        <li>
-          <a class="search" href="">
-            <img src="./img/search.svg" alt="">
-          </a>
+        <li class="servers-list__item">
+          <a class="servers-list__link button button--search" href="#"></a>
         </li>
       </ul>
-
     </header>
   </div>
 </body>

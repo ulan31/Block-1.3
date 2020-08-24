@@ -34,47 +34,73 @@ ul {
     font-family: 'TT Lakes Regular';
     font-size: 14px;
     width: 320px;
-    margin: 18px auto;
+    margin: 0 auto;
 }
 .header {
     display: flex;
     align-items: center;
+    margin-top: 18px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.button {
+    width: 40px;
+    height: 40px;
+    border: none;
 }
 .header__burger {
     width: 40px;
     height: 40px;
+    background: url('../img/burger.svg') 50%/cover no-repeat;
     border: none;
-    background-color: #fff;
-    margin-left: 16px;
-}
-.logo{
-    flex: 1 1 auto;
-    text-align: center;
-}
-.menu-three {
-    display: none;
-}
-.header__menu {
     margin-right: 16px;
 }
-.menu-two {
-    display: flex;
-    flex: 1 1 30%;
-    justify-content: space-between;
+.header__logo {
+    margin-right: 16px;
 }
-.menu-two::before {
+.logo {
+    width: 98px;
+    height: 52px;
+    background: url('../img/logo.svg') 50%/cover no-repeat;
+    border: none;
+}
+.feedback-list {
+    display: none;
+}
+.serves-list {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-between;
+
+}
+.serves-list::before {
     content: '';
     width: 2px;
     height: 32px;
-    background-color: #EAEAEA;
+    background: #EAEAEA;
     align-self: center;
 }
-.repair {
-    width: 40px;
-    height: 40px;
-    border: none;
-    background-color: #fff;
+.button--call {
+    background: url('../img/call.svg') 50%/cover no-repeat;
 }
+.button--chat {
+    background: url('../img/chat.svg') 50%/cover no-repeat;
+}
+.button--person {
+    display: block;
+    background: url('../img/person.svg') 50%/cover no-repeat;
+}
+.button--repair {
+    background: url('../img/repair.svg') 50%/cover no-repeat;
+}
+.button--search {
+    display: block;
+    background: url('../img/search.svg') 50%/cover no-repeat;
+}
+
+
+
+
 
 @media (min-width: 768px) {
     .container {
@@ -84,50 +110,7 @@ ul {
     .header {
 
     }
-    .header__burger {
-        display: flex;
-        flex: 1 1 10%;
-        margin-left: 24px;
-    }
-    .header__burger::after {
-        content: '';
-        width: 2px;
-        height: 32px;
-        background-color: #EAEAEA;
-        align-self: center;
-        margin-left: 15px;
-    }
-    .logo {
-        flex: 1 1 40%;
-        text-align: left;
-    }
-    .menu-three {
-        display: flex;
-        flex: 1 1 30%;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .header__menu {
-        margin-right: 24px;
-    }
-    .menu-two::before {
-        margin-left: 10px;
-    }
-    .call {
-        width: 40px;
-        height: 40px;
-        border: none;
-        background-color: #fff;
-    }
-    .menu-two {
-        flex: 1 1 20%;
-    }
-    .chat {
-        width: 40px;
-        height: 40px;
-        border: none;
-        background-color: #fff;
-    }
+
 
 
 
